@@ -63,6 +63,7 @@ export default {
         date: this.date.date,
       };
       this.$store.dispatch("createTask", task);
+      this.$router.push("/list");
     },
   },
   destroyed() {
